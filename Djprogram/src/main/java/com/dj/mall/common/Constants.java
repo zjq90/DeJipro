@@ -129,4 +129,132 @@ public class Constants {
         public static final Integer HIDE = 0;
         public static final Integer SHOW = 1;
     }
+
+    public static class OrderStatus {
+        public static final Integer PENDING_PAYMENT = 0;
+        public static final Integer PENDING_SHIPMENT = 1;
+        public static final Integer PENDING_RECEIVE = 2;
+        public static final Integer COMPLETED = 3;
+        public static final Integer CANCELLED = 4;
+        public static final Integer REFUNDED = 5;
+    }
+
+    public static class PayStatus {
+        public static final Integer UNPAID = 0;
+        public static final Integer PAID = 1;
+        public static final Integer PARTIAL_REFUND = 2;
+        public static final Integer FULL_REFUND = 3;
+    }
+
+    public static class OrderType {
+        public static final Integer NORMAL = 1;
+        public static final Integer GROUP = 2;
+        public static final Integer BARGAIN = 3;
+        public static final Integer INTEGRAL = 4;
+    }
+
+    public static class OrderSource {
+        public static final Integer MINI_PROGRAM = 1;
+        public static final Integer APP = 2;
+        public static final Integer H5 = 3;
+    }
+
+    public static class PickupType {
+        public static final Integer DELIVERY = 1;
+        public static final Integer PICKUP = 2;
+    }
+
+    public static class CouponType {
+        public static final Integer FULL_REDUCTION = 1;
+        public static final Integer DISCOUNT = 2;
+        public static final Integer NO_THRESHOLD = 3;
+        public static final Integer NEW_USER = 4;
+    }
+
+    public static class DiscountType {
+        public static final Integer AMOUNT = 1;
+        public static final Integer DISCOUNT = 2;
+    }
+
+    public static class CouponApplyType {
+        public static final Integer ALL = 0;
+        public static final Integer CATEGORY = 1;
+        public static final Integer GOODS = 2;
+    }
+
+    public static class UserCouponStatus {
+        public static final Integer UNUSED = 0;
+        public static final Integer USED = 1;
+        public static final Integer EXPIRED = 2;
+        public static final Integer INVALID = 3;
+    }
+
+    public static class GroupType {
+        public static final Integer NORMAL = 1;
+        public static final Integer OLD_NEW = 2;
+        public static final Integer LEADER_FREE = 3;
+    }
+
+    public static class GroupActivityStatus {
+        public static final Integer IN_PROGRESS = 0;
+        public static final Integer SUCCESS = 1;
+        public static final Integer FAILED = 2;
+    }
+
+    public static class GroupOrderStatus {
+        public static final Integer PENDING_PAYMENT = 0;
+        public static final Integer PAID = 1;
+        public static final Integer CANCELLED = 2;
+        public static final Integer REFUNDED = 3;
+    }
+
+    public static class BargainActivityStatus {
+        public static final Integer IN_PROGRESS = 0;
+        public static final Integer COMPLETED = 1;
+        public static final Integer PURCHASED = 2;
+        public static final Integer EXPIRED = 3;
+        public static final Integer CANCELLED = 4;
+    }
+
+    public static class PosterType {
+        public static final Integer PROMOTION = 1;
+        public static final Integer INVITE = 2;
+    }
+
+    public static class ArticleStatus {
+        public static final Integer OFF_SHELF = 0;
+        public static final Integer ON_SHELF = 1;
+    }
+
+    public static class BannerType {
+        public static final Integer HOME = 1;
+        public static final Integer ARTICLE = 2;
+        public static final Integer ACTIVITY = 3;
+    }
+
+    public static class BannerLinkType {
+        public static final Integer NONE = 0;
+        public static final Integer GOODS = 1;
+        public static final Integer ARTICLE = 2;
+        public static final Integer ACTIVITY = 3;
+        public static final Integer EXTERNAL = 4;
+    }
+
+    public static class ServiceLinkType {
+        public static final Integer NONE = 0;
+        public static final Integer INTERNAL = 1;
+        public static final Integer EXTERNAL = 2;
+        public static final Integer MINI_PROGRAM = 3;
+    }
+
+    public static class SubscribeType {
+        public static final Integer ONCE = 1;
+        public static final Integer LONG_TERM = 2;
+    }
+
+    public static class UserSubscribeStatus {
+        public static final Integer CANCELLED = 0;
+        public static final Integer ACTIVE = 1;
+        public static final Integer EXPIRED = 2;
+    }
 }
